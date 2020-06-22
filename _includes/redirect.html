@@ -1,0 +1,11 @@
+# Opening System Settings…
+
+<script>
+document.addEventListener ("DOMContentLoaded", (event) => {
+  let path = window.location.pathname.slice (1, window.location.pathname.length);
+  window.location = "settings://" + path;
+  document.getElementById ("redirect").href += path;
+})
+</script>
+
+You can safely close this page. [Click here if System Settings did not open.](settings://){: id="redirect"}

@@ -1,0 +1,6 @@
+title: elementary Settings
+description: Quickly link to System Settings
+markdown: kramdown
+
+plugins:
+  - jekyll-redirect-from
