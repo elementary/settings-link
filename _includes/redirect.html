@@ -3,6 +3,7 @@
 <script>
 document.addEventListener ("DOMContentLoaded", (event) => {
   let path = window.location.pathname.slice (1, window.location.pathname.length);
+  path = path.replace ("settings-link/", "");
   window.location = "settings://" + path;
   document.getElementById ("redirect").href += path;
 })
